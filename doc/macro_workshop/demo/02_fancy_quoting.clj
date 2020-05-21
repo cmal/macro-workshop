@@ -70,6 +70,8 @@
           `(apply + ~xs)))
   ;; ^^^ why? ^^^
 
+  ;; '~xs
+
   ;; notice that it's way easier to see what's going wrong when we look at the
   ;; code that's generated, not at the error messages from eval!!!
   ;; the same thing applies for debugging macros (so use `macroexpand-1`!)

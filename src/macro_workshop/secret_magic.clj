@@ -1,4 +1,6 @@
 (ns macro-workshop.secret-magic)
 
 (defmacro local-env []
-  :replace-me)
+  (into {}
+        (for [k (keys &env)]
+          [`(symbol ~(name k)) k])))

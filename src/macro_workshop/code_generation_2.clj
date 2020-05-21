@@ -5,13 +5,13 @@
 ;; macro body!
 
 (defmacro add [x y]
-  :replace-me)
+  (list '+ x y))
 
 (defmacro multiply [x y]
-  :replace-me)
+  (list '* x y))
 
 (defmacro make-squarer []
-  :replace-me)
+  '#(* % %))
 
 (defmacro make-hello-world []
-  :replace-me)
+  '#(println "Hello World!"))

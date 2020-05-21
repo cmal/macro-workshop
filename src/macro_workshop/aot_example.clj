@@ -1,5 +1,6 @@
 (ns macro-workshop.aot-example
-  (:gen-class))
+  (:gen-class)
+  )
 
 (defmacro foo []
   (println "This prints during macroexpansion.")

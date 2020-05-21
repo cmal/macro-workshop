@@ -3,13 +3,16 @@
 ;; remember: you can use normal clojure sequence functions to generate code!
 
 (defn generate-addition [a b]
-  :replace-me)
+  (list '+ a b))
 
 (defn generate-multiplication [a b]
-  :replace-me)
+  (list '* a b))
 
 (defn generate-squarer []
-  :replace-me)
+  '#(* % %))
 
 (defn generate-hello-world-definition []
-  :replace-me)
+  '#(println "Hello World!"))
+
+
+
